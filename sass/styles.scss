@@ -1,0 +1,397 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/mixins";
+@import "compass/css3";
+
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+}
+
+.wrapper__elem {
+  position: relative;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  z-index: 10;
+  position: fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.4s ease-out;
+}
+
+nav.scroll {
+  background-color: $black;
+}
+
+nav ul {
+  margin: 15px 20px;
+  display: flex;
+  padding: 0;
+}
+
+nav a {
+  padding-left: 15px;
+  &:hover {
+    color: $highlight_blue;
+  }
+}
+
+.navbar__elem {
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.navbar__elem__right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hamburger__logo {
+  display: flex;
+}
+
+.arrow__down,
+.bars__container {
+  cursor: pointer;
+}
+
+.bars {
+  margin: 25px 1em;
+  @include bars(25px,2px);
+}
+
+.channelfix__logo img {
+  width: 160px;
+  height: 52px;
+}
+
+.arrow__down {
+  margin: 13px 10px 0 50px;
+  display: none;
+}
+
+.navbar__elem__pages {
+  display: block;
+}
+
+.navbar__elem__left {
+  display: flex;
+}
+
+.navbar__elem__left img {
+  margin-left: 15px;
+  width: 28px;
+  height: 25px;
+}
+
+.sidemenu__elem {
+  display: flex;
+}
+
+.hero__image {
+  background: linear-gradient( rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.17)), url('https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') no-repeat center;
+  height: 490px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+}
+
+.hero__text {
+  text-align: center;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+
+  h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 0;
+    text-shadow: 2px 4px 5px $black;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 4px $black;
+  }
+
+  span {
+    color: $prize_yellow;
+  }
+}
+
+.hero__button {
+  border: 2px solid #f8e74a9c;
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+
+ .hero__button:hover {
+   background-position: right center;
+ }
+
+ .hero__button--btn {
+  background-image: linear-gradient(to right, rgba(68, 124, 247, 0.65) 0%, rgba(113, 225, 63, 0.65) 51%, rgba(248, 231, 74, 0.4) 100%);
+  font-weight: bold;
+}
+.tournament__category {
+  margin-left: 70px;
+}
+
+.tournaments {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 1% 2%;
+}
+
+.tournaments h1 {
+  margin: 0 30px;
+  padding: 10px 0 0;
+}
+
+.tournament__entries {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.tournament__entries li {
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  margin: 0 20px 20px;
+}
+
+.tournament__entry__box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.tournament__entry__box--image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tournament__entry__info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+}
+
+.tournament__entry__info h3 {
+  font: normal 1000 21px/1.1 Roboto;
+  color: #fff;
+  margin: 0 30px;
+  padding: 20px 0 0;
+  text-align: left;
+  text-shadow: 2px 4px 4px $black;
+}
+
+.tournament__entry__timer p {
+  font-weight: 400;
+  color: $white;
+  font-size: 15px;
+  margin: 0;
+}
+
+.tournament__entry__timer {
+  display: flex;
+  position: absolute;
+  width: 120px;
+  height: 25px;
+  background-color: $black;
+  bottom: 0;
+  right: 0;
+}
+
+.sidemenu {
+  height: 100%;
+  width: 290px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: -500px;
+  background-color: #373447;
+  overflow-x: hidden;
+  padding-top: 5px;
+  transition: all 0.3s linear;
+
+  hr {
+    border-top: 1px solid $black;
+    margin: 8px 20px;
+  }
+
+  &:hover {
+    color: $highlight_blue;
+  }
+}
+
+.sidemenu.active {
+  left: 0;
+}
+
+.sidemenu a {
+  padding: 10px 10px 10px 30px;
+  font-size: 18px;
+  display: flex;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: inset 0 0 0 5px #53a7ea;
+  }
+}
+
+i {
+  margin-right: 8px;
+  margin-left: 3px;
+  opacity: 0.8;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sidemenu .hero__button--btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidemenu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidemenu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidemenu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.sidemenu__overlay {
+  background: rgba(54, 25, 25, .5);
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.active_tab a{
+  color: $highlight_blue;
+}
+
+@media screen and (max-width: 500px) {
+  .hero__text {
+    h1,
+    h2 {
+      font-size: 45px;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    margin-top: 5px;
+    border-top: 1px solid $white;
+    line-height: 50px;
+  }
+
+  .navbar__elem {
+    margin: 0;
+  }
+
+  .hamburger__logo {
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .arrow__down {
+    display: block;
+  }
+
+  .navbar__elem__pages.responsive {
+    display: block;
+  }
+
+  .navbar__elem__pages {
+    padding-top: 50px;
+    background-color: $black;
+    display: none;
+  }
+
+  .navbar__elem__right {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar__elem__pages__list {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    height: 100%;
+  }
+
+  .navbar__elem__left {
+    display: none;
+  }
+}

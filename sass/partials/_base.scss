@@ -1,0 +1,17 @@
+body {
+  background-color: $background_color;
+  font-family: 'Roboto';
+  color: $white;
+}
+
+.content{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+

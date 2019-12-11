@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> OPEN TOURNAMENT PAGE</title>
+  <link rel="stylesheet" href="sass/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wrapper__elem">
+      <nav class="navbar" id="navbarPrime">
+        <div class="navbar__elem">
+          <div class="navbar__elem__right">
+            <div class="hamburger__logo">
+              <div class="bars__container" onclick="open_slide_menu()">
+                <div class="bars"></div>
+              </div>
+              <div class="channelfix__logo">
+                <img src="img/channelfix.png" alt="channelfix logo">
+              </div>
+              <div class="arrow__down">
+                <div href="" onclick="toggle_dropdown()">&#9660</div>
+              </div>
+            </div>
+            <div class="navbar__elem__pages" id="navbar__elem__pages">
+              <ul class="navbar__elem__pages__list" id="navbar__elem__pages__list">
+                <li><a href="#">POPULAR</a></li>
+                <li class = "active_tab"><a href="index.html">OPEN</a></li>
+                <li><a href="#">RANKING</a></li>
+                <li><a href="#">BATTLING</a></li>
+                <li><a href="#">TOP-PRIZES</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__elem__left">
+            <ul class="navbar__elem__left__icons">
+              <li><i class="tiny material-icons">search</i></li>
+              <li><i class="tiny material-icons">attach_money</i></li>
+              <li><i class="tiny material-icons">email</i></li>
+              <li><i class="tiny material-icons">notifications</i></li>
+              <li><img src="img/avatar.svg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="sidemenu" class="sidemenu">
+        <div class="sidemenu__elem">
+          <div class="bars__container" onclick="close_slide_menu()">
+            <div class="bars"></div>
+          </div>
+          <div class="channelfix__logo">
+            <img src="img/channelfix.png" alt="channelfix logo">
+          </div>
+        </div>
+        <a href="#"><i class="small material-icons">input</i>Join a Tournament</a>
+        <a href="#"><i class="small material-icons">arrow_upward</i>Vote in a Tournament</a>
+        <a href="#"><i class="small material-icons">stars</i>Winners of Tournaments</a>
+        <a href="#"><i class="small material-icons">add_box</i>Create Tournament</a>
+        <hr>
+        <a href="#"><i class="small material-icons">star</i>Leaderboard</a>
+        <a href="#"><i class="small material-icons">stars</i>Get Tokens</a>
+        <a href="#"><i class="small material-icons">attach_money</i>Cash Out</a>
+        <a href="#"><i class="small material-icons">card_giftcard</i>Redeem Code</a>
+        <a href="#"><i class="small material-icons">school</i>ChannelFix School</a>
+        <a href="#"><i class="small material-icons">arrow_upward</i>Voting Reminders</a>
+        <hr>
+        <a href="#"><i class="small material-icons">people</i>People</a>
+        <hr>
+        <a href="#"><i class="small material-icons">local_atm</i>Advertisers</a>
+        <hr>
+        <a href="#"><i class="small material-icons">person</i>About Us</a>
+        <a href="#"><i class="small material-icons">feedback</i>Feedback</a>
+        <a href="#"><i class="small material-icons">fitness_center</i>Challenges</a>
+        <a href="#"><i class="small material-icons">info</i>How to Win</a>
+        <a href="#"><i class="small material-icons">local_offer</i>What we Offer</a>
+        <a href="#"><i class="small material-icons">indeterminate_check_box</i>Terms & Conditions</a>
+        <a href="#"><i class="small material-icons">fingerprint</i>Privacy Policy</a>
+        <a href="#"><i class="small material-icons">copyright</i>Copyright</a>
+        <a href="#"><i class="small material-icons">phone_in_talk</i>Contact Us</a>
+        <a href="#"><i class="small material-icons">settings</i>Settings</a>
+      </div>
+      <div class="sidemenu__overlay" onclick="close_slide_menu()"></div>
+      <div class="hero__image">
+        <div class="hero__text">
+          <h1>LOREM IPSUM<br>CHALLENGE</h1>
+          <h2>WIN <span>$100</span></h2>
+          <a class="hero__button hero__button--btn">JOIN AND WIN</a>
+        </div>
+      </div>
+      <div class="tournaments">
+        <div class="tournament__category">
+          <h1>NEW</h1>
+        </div>
+        <ul class="tournament__entries">
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                    <img src="https://images.pexels.com/photos/904276/pexels-photo-904276.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                    <div class="tournament__entry__info">
+                      <h3>PAINT<br>CHALLENGE</h3>
+                    </div>
+                    <div class="tournament__entry__timer">
+                      <i class="tiny material-icons">timer</i>
+                      <p>02:05:40:30</p>
+                    </div>
+                </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                  <img src="https://images.pexels.com/photos/889082/pexels-photo-889082.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                  <div class="tournament__entry__info">
+                    <h3>CHESS<br>CHALLENGE</h3>
+                  </div>
+                  <div class="tournament__entry__timer">
+                    <i class="tiny material-icons">timer</i>
+                    <p>02:05:40:30</p>
+                  </div>
+                </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                  <img src="https://images.pexels.com/photos/886470/pexels-photo-886470.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                  <div class="tournament__entry__info">
+                    <h3>TYPING<br>CHALLENGE</h3>
+                  </div>
+                  <div class="tournament__entry__timer">
+                    <i class="tiny material-icons">timer</i>
+                    <p>02:05:40:30</p>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="tournament__entry__box tournament__entry__box--image">
+                <a href="tournament_detail.html">
+                  <img src="https://images.pexels.com/photos/39016/ice-hockey-goalie-goal-sport-39016.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                  <div class="tournament__entry__info">
+                    <h3>HOCKEY<br>CHALLENGE</h3>
+                  </div>
+                  <div class="tournament__entry__timer">
+                    <i class="tiny material-icons">timer</i>
+                    <p>02:05:40:30</p>
+                  </div>
+                </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tournaments">
+        <div class="tournament__category">
+          <h1>DANCE</h1>
+        </div>
+
+        <ul class="tournament__entries">
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+              <img src="https://images.pexels.com/photos/175658/pexels-photo-175658.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+              <div class="tournament__entry__info">
+                <h3>DANCE<br>CHALLENGE</h3>
+              </div>
+              <div class="tournament__entry__timer">
+                <i class="tiny material-icons">timer</i>
+                <p>02:05:40:30</p>
+              </div>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+              <img src="https://images.pexels.com/photos/54093/hawaiian-hula-dancers-aloha-stadium-dod-photo-by-usaf-tech-54093.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+              <div class="tournament__entry__info">
+                <h3>DANCE<br>CHALLENGE</h3>
+              </div>
+              <div class="tournament__entry__timer">
+                <i class="tiny material-icons">timer</i>
+                <p>02:05:40:30</p>
+              </div>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+              <img src="https://images.pexels.com/photos/843256/pexels-photo-843256.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+              <div class="tournament__entry__info">
+                <h3>DANCE<br>CHALLENGE</h3>
+              </div>
+              <div class="tournament__entry__timer">
+                <i class="tiny material-icons">timer</i>
+                <p>02:05:40:30</p>
+              </div>
+              </div>
+            </li>
+            <li>
+              <div class="tournament__entry__box tournament__entry__box--image">
+                <a href="tournament_detail.html">
+                  <img src="https://images.pexels.com/photos/159273/breakdancing-battle-life-males-159273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                  <div class="tournament__entry__info">
+                    <h3>DANCE<br>CHALLENGE</h3>
+                  </div>
+                  <div class="tournament__entry__timer">
+                    <i class="tiny material-icons">timer</i>
+                    <p>02:05:40:30</p>
+                  </div>
+                </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tournaments">
+        <div class="tournament__category">
+          <h1>MUSIC</h1>
+        </div>
+
+        <ul class="tournament__entries">
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                <img src="https://images.pexels.com/photos/144428/pexels-photo-144428.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                <div class="tournament__entry__info">
+                  <h3>MUSIC<br>CHALLENGE</h3>
+                </div>
+                <div class="tournament__entry__timer">
+                  <i class="tiny material-icons">timer</i>
+                  <p>02:05:40:30</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                <img src="https://images.pexels.com/photos/346726/pexels-photo-346726.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                <div class="tournament__entry__info">
+                  <h3>MUSIC<br>CHALLENGE</h3>
+                </div>
+                <div class="tournament__entry__timer">
+                  <i class="tiny material-icons">timer</i>
+                  <p>02:05:40:30</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                <img src="https://images.pexels.com/photos/354304/pexels-photo-354304.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                <div class="tournament__entry__info">
+                  <h3>MUSIC<br>CHALLENGE</h3>
+                </div>
+                <div class="tournament__entry__timer">
+                  <i class="tiny material-icons">timer</i>
+                  <p>02:05:40:30</p>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="tournament__entry__box tournament__entry__box--image">
+              <a href="tournament_detail.html">
+                <img src="https://images.pexels.com/photos/756242/pexels-photo-756242.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+                <div class="tournament__entry__info">
+                  <h3>MUSIC<br>CHALLENGE</h3>
+                </div>
+                <div class="tournament__entry__timer">
+                  <i class="tiny material-icons">timer</i>
+                  <p>02:05:40:30</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

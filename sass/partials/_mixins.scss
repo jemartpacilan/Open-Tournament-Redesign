@@ -1,0 +1,55 @@
+@mixin bars($width,$height) {
+  position: relative;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: $green;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: -($height+4px);
+    background: $blue;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $height+4px;
+    background: $yellow;
+  }
+}
+
+
+@mixin truncate($rows, $line-height) {
+  position: relative;
+  overflow: hidden;
+  max-height: $line-height * $rows;
+  line-height: $line-height;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: $line-height;
+
+  }
+
+  @supports (-webkit-line-clamp: $rows) {
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    -webkit-box-orient: vertical;
+
+    &:after {
+      display: none;
+    }
+  }
+}

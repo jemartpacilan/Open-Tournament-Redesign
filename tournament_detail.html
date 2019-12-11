@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> OPEN TOURNAMENT DETAIL PAGE</title>
+  <link rel="stylesheet" href="sass/css/detail_styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wrapper__elem">
+      <nav class="navbar" id="navbarPrime">
+        <div class="navbar__elem">
+          <div class="navbar__elem__right">
+            <div class="hamburger__logo">
+              <div class="bars__container" onclick="open_slide_menu()">
+                <div class="bars"></div>
+              </div>
+              <div class="channelfix__logo">
+                <img src="img/channelfix.png" alt="channelfix logo">
+              </div>
+              <div class="arrow__down">
+                <a href="#" onclick="toggle_dropdown()">&#9660</a>
+              </div>
+            </div>
+            <div class="navbar__elem__pages" id="navbar__elem__pages">
+              <ul class="navbar__elem__pages__list" id="navbar__elem__pages__list">
+                <li><a href="#">POPULAR</a></li>
+                <li class="active_tab"><a href="index.html">OPEN</a></li>
+                <li><a href="#">RANKING</a></li>
+                <li><a href="#">BATTLING</a></li>
+                <li><a href="#">TOP-PRIZES</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__elem__left">
+            <ul class="navbar__elem__left__icons">
+              <li><i class="tiny material-icons">search</i></li>
+              <li><i class="tiny material-icons">attach_money</i></li>
+              <li><i class="tiny material-icons">email</i></li>
+              <li><i class="tiny material-icons">notifications</i></li>
+              <li><img src="img/avatar.svg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="sidemenu" class="sidemenu">
+        <div class="sidemenu__elem">
+          <div class="bars__container" onclick="close_slide_menu()">
+            <div class="bars"></div>
+          </div>
+          <div class="channelfix__logo">
+            <img src="img/channelfix.png" alt="channelfix logo">
+          </div>
+        </div>
+        <a href="#"><i class="small material-icons">input</i>Join a Tournament</a>
+        <a href="#"><i class="small material-icons">arrow_upward</i>Vote in a Tournament</a>
+        <a href="#"><i class="small material-icons">stars</i>Winners of Tournaments</a>
+        <a href="#"><i class="small material-icons">add_box</i>Create Tournament</a>
+        <hr>
+        <a href="#"><i class="small material-icons">star</i>Leaderboard</a>
+        <a href="#"><i class="small material-icons">stars</i>Get Tokens</a>
+        <a href="#"><i class="small material-icons">attach_money</i>Cash Out</a>
+        <a href="#"><i class="small material-icons">card_giftcard</i>Redeem Code</a>
+        <a href="#"><i class="small material-icons">school</i>ChannelFix School</a>
+        <a href="#"><i class="small material-icons">arrow_upward</i>Voting Reminders</a>
+        <hr>
+        <a href="#"><i class="small material-icons">people</i>People</a>
+        <hr>
+        <a href="#"><i class="small material-icons">local_atm</i>Advertisers</a>
+        <hr>
+        <a href="#"><i class="small material-icons">person</i>About Us</a>
+        <a href="#"><i class="small material-icons">feedback</i>Feedback</a>
+        <a href="#"><i class="small material-icons">fitness_center</i>Challenges</a>
+        <a href="#"><i class="small material-icons">info</i>How to Win</a>
+        <a href="#"><i class="small material-icons">local_offer</i>What we Offer</a>
+        <a href="#"><i class="small material-icons">indeterminate_check_box</i>Terms & Conditions</a>
+        <a href="#"><i class="small material-icons">fingerprint</i>Privacy Policy</a>
+        <a href="#"><i class="small material-icons">copyright</i>Copyright</a>
+        <a href="#"><i class="small material-icons">phone_in_talk</i>Contact Us</a>
+        <a href="#"><i class="small material-icons">settings</i>Settings</a>
+      </div>
+      <div class="sidemenu__overlay" onclick="close_slide_menu()"></div>
+
+      <div class="tournament__container">
+        <div class="tournament__entry">
+          <img class="tournament__entry__image" src="https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+          <div class="tournament__entry__info">
+            <img src="img/play.png" alt="">
+          </div>
+        </div>
+
+        <div class="tournament__entry__title">
+          <h1>LOREM IPSUM CHALLENGE</h1>
+          <div class="tournament__entry__timer">
+            <i class="small material-icons">timer</i>
+            <p> 01 : 21 : 40 : 20 </p>
+          </div>
+        </div>
+
+        <div class="tournament__creator">
+          <div class="tournament__creator__info">
+            <div class="tournament__creator__info__elem">
+              <img src="img/avatar_1.svg" alt="">
+              <div class="tournament__creator__name">
+                <h3>Juana Karencitta</h3>
+                <p>5 months ago</p>
+              </div>
+            </div>
+            <div class="tournament__join">
+              <a href="#">JOIN</a>
+            </div>
+          </div>
+          <div class="tournament__description">
+            <a id="show-more" class="show-less" href="#0">SHOW LESS</a>
+            <a id="show-less" class="show-more" href="#show-more">SHOW MORE</a>
+            <div class="show">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><span>CATEGORY</span>DANCE</p>
+              <div class="timeline">
+                <h2>TIMELINE</h2>
+                <ul class="timeline__elem">
+                  <li class="active">ENTRY SUBMISSION<p>MAY 10,2018</p></li>
+                  <li>FIRST ROUND<p>MAY 20,2018</p></li>
+                  <li>FINAL ROUND<p>MAY 30,2018</p></li>
+                  <li>FINISH<p>JUNE 10,2018</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__tab">
+
+          <input class="tabs" id="tab1" type="radio" name="tabs" checked>
+          <label for="tab1">COMMENTS</label>
+
+          <input class="tabs" id="tab2" type="radio" name="tabs">
+          <label for="tab2">RULES</label>
+
+          <input class="tabs" id="tab3" type="radio" name="tabs">
+          <label for="tab3">PRIZES</label>
+
+
+          <section id="content1">
+            <div class="input_comment">
+              <img src="img/avatar.svg" alt="">
+              <input class="comment_input" type="text" placeholder="Write a comment...">
+            </div>
+            <div class="output_comments">
+              <div class="comment_pic">
+                <img src="img/avatar_2.svg" alt="">
+              </div>
+              <div class="comment_info">
+                <div class="comment_name">
+                  <h3>Juana Karencitta</h3>
+                  <p>2 minutes ago</p>
+                </div>
+                <div class="comment">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="output_comments">
+              <div class="comment_pic">
+                <img src="img/avatar_3.svg" alt="">
+              </div>
+              <div class="comment_info">
+                <div class="comment_name">
+                  <h3>Juana Karencitta</h3>
+                  <p>2 minutes ago</p>
+                </div>
+                <div class="comment">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section id="content2">
+            <div class="rules">
+              <h1>OFFICIAL RULES</h1>
+              <hr>
+              <p>CHANNELFIX. COM VIDEO CONTESTS</p>
+              <p>This Contest is governed by these Official Rules and is subject to all applicable federal, state, and local laws.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es.</p>
+            </div>
+          </section>
+
+          <section id="content3">
+            <div class="prize">
+              <div class="prize_info">
+                <h1>1ST PLACE</h1>
+                <h3>FULFILLED BY <img src="img/channelfix.png" alt=""></h3>
+              </div>
+              <div class="prize_money">
+                <h1><img src="img/notes.png" alt="">$300</h1>
+              </div>
+            </div>
+
+            <div class="prize">
+              <div class="prize_info">
+                <h1>2ND PLACE</h1>
+                <h3>FULFILLED BY <img src="img/channelfix.png" alt=""></h3>
+              </div>
+              <div class="prize_money">
+                <h1><img src="img/notes.png" alt="">$200</h1>
+              </div>
+            </div>
+
+            <div class="prize">
+              <div class="prize_info">
+                <h1>3RD PLACE</h1>
+                <h3>FULFILLED BY <img src="img/channelfix.png" alt=""></h3>
+              </div>
+              <div class="prize_money">
+                <h1><img src="img/notes.png" alt="">$100</h1>
+              </div>
+            </div>
+          </section>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
